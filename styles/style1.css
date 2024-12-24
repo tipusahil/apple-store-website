@@ -124,20 +124,38 @@ bottom: -10px;
 
 
 .header_big_title_div{
-    width: 100%;
-    height: 100%;
+    width:80%;
+    height: 80%;
    
     margin: 0px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border:2px solid red;
 
 }
 
+.title_colorful_text{
+    background:linear-gradient(to right, #0090f7, #ba62fc, #f2416b);
+    background-clip:text;
+    color:transparent;
+}
+.header_big_title_div h1,.title_colorful_text{
+font-size: 35px;
+font-weight: 800;
+}
 
+.p_tag{
+    display: flex;
+   justify-self: center;
+   align-items: center;
+}
 
-
+.p_tag a{
+color:rgb(53, 100, 243);
+text-align: none;
+}
  
+
 /* header er style end here */
 
 
