@@ -155,7 +155,8 @@ bottom: -10px;
 }
 .header_big_title_div h1,.title_colorful_text{
 font-size: 35px;
-font-weight: 800;
+font-weight: 700;
+color:#6e6e73;
 }
 
 .p_tag{
@@ -227,7 +228,40 @@ margin: 10px;
 
 /* main tag style start from here */
 
+.big_img_sec1 h1{
+font-size: 25px;
+font-weight: 700;
+color:#6e6e73;
+}
 
+.title_colorful_text{
+    background:linear-gradient(to right, #0090f7, #ba62fc, #f2416b);
+    background-clip:text;
+    color:transparent;
+}
+
+
+.big_img_parent_div{
+
+    display:flex;
+    justify-content: center;
+    align-items: end;
+    padding:10px;
+    border:2px solid red;
+    overflow-x: auto;
+
+}
+
+.big_img_box{
+  
+    height: 100%;
+    border:2px solid navy;
+}
+
+.big_img_box img{
+    width: 100%;
+    height: 100%;
+}
 /* main tag style end from here */
 
 /* footer  style start from here */
