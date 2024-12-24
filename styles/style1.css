@@ -21,18 +21,47 @@ body{
 
 /* nav bar style start from here */
 .nav{
-    border:2px solid red;
+background-color:#1818185e;
+position:relative; /* (.nav::before) property er jonno dewa hoyece. */
+width: 100%;
+margin:0;
+height: 100px;
+
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+border:2px solid rgba(151, 150, 150, 0.879);
+}
+
+/* nav er pichone blur korar jonno evabe (before)property use kore banate hobe. */
+.nav::before{
+    content:" ";
+    position: absolute;
+    top:0px;
+    right:0px;
+    left: 0px;
+    bottom:-10px;
+    filter: blur(10px);
+
+    background: linear-gradient(to right, #0090f7, #ba62fc, #f2416b);
+z-index:-2;
 
 }
 
 .nav >ul{
     display: flex;
-    border:2px solid green;
     justify-content: center;
     align-items: center;
     margin: 10px;
     font-size: 14px;
-
+    background-color: rgba(0, 0, 0, 0.224);
+background:linear-gradient(to right, #0090f794, #b962fc9d, #f2416ab5 );
+border-radius: 5px;
+padding:10px 20px;
+z-index:1;
+position: relative;
+/* for a tag hover korle jate ul er background e rgb shadow deka jai */
 }
 
 .fa-apple{
@@ -42,7 +71,6 @@ font-size: 30px;
 .nav ul li{
     list-style: none;
     margin-left: 20px;
-    border:1px solid navy;
     padding: 10px;
 }
 
@@ -52,11 +80,22 @@ font-size: 30px;
 }
 
 .nav ul li a:hover{
-    background:linear-gradient(to right, #0090f7, #ba62fc, #f2416b);
+    background:linear-gradient(to right,rgb(127, 247, 247), #bcdbf2,rgb(255, 254, 254)  );
     background-clip: text;
    color:transparent;
 }
 
+.nav a:hover .nav ul::before{
+ content: " ";
+position:absolute;
+top:20px;
+left:0px;
+right: 0px;
+bottom: -20px;
+
+ background: linear-gradient(to right,rgb(127, 247, 247), #bcdbf2,rgb(255, 254, 254) );
+    z-index: -1;
+}
 
 
 /* nav bar style end from here */
@@ -70,7 +109,8 @@ font-size: 30px;
 
 
 
-/* nav bar style start from here */
-/* nav bar style start from here */
-/* nav bar style start from here */
-/* nav bar style start from here */
+/* main tag style start from here */
+/* main tag style end from here */
+
+/* footer  style start from here */
+/* footer  style end from here */
