@@ -10,8 +10,8 @@
 }
 
 body{
-    /* background-color:#f5f5f7; */
-    background: linear-gradient(90deg,rgb(239, 185, 239), #bcdbf2,rgb(127, 247, 247));
+    background-color:#f5f5f7;
+    /* background: linear-gradient(90deg,rgb(239, 185, 239), #bcdbf2,rgb(127, 247, 247)); */
     max-width: 1300px;
     box-sizing: border-box;
     margin: 0;
@@ -31,7 +31,6 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border:2px solid black;
 }
 
 /* nav bar style start from here */
@@ -47,7 +46,7 @@ border-radius: 10px;
 display: flex;
 justify-content: center;
 align-items: center;
-border:2px solid rgba(151, 150, 150, 0.879);
+
 }
 
 /* nav er pichone blur korar jonno evabe (before)property use kore banate hobe. */
@@ -88,7 +87,6 @@ transition: 10s infinite ease-in-out;
     align-items: center;
     margin: 10px;
     font-size: 14px;
-    background-color: rgba(0, 0, 0, 0.224);
 background:linear-gradient(to right, #0090f794, #b962fc9d, #f2416ab5 );
 border-radius: 5px;
 padding:10px 20px;
@@ -116,21 +114,6 @@ font-size: 30px;
     background-clip: text;
    color:transparent;
 }
-
-/* 
-.nav ul li a:hover ~ .nav > ul::before{
- content:"";
-position:absolute;
-top:20px;
-left:0px;
-right: 0px;
-bottom: -10px;
- background: linear-gradient(to right,rgb(127, 247, 247), #bcdbf2,rgb(255, 254, 254) );
- z-index: -1;
- opacity: 0; ডিফল্টে শ্যাডো দেখানো হবে না
- transition: opacity 0.3s ease-in-out;
-} */
-
 
 /* nav bar style end from here */
 
@@ -236,7 +219,6 @@ main{
 }
 
 .big_img_sec1{
-
     width: 100%;
     height: 100%;
     margin:0;
@@ -270,7 +252,6 @@ text-align: left;
    height:100%;
    width: 90%;
    display:flex;
-  border:2px solid grey;
 justify-content:flex-start;
     overflow-x:scroll;
 }
@@ -278,12 +259,12 @@ justify-content:flex-start;
 .big_img_box{
     margin:20px;
 padding:0;
-  border:2px solid navy;
   max-width: 500px;
+
   height: 100%;
 background-color: rgba(255, 255, 255, 0.751);
 border-radius: 20px;
-
+box-shadow: 0px 0px 15px 5px rgba(213, 209, 209, 0.842);
 }
 
 .big_img_box img{
@@ -301,29 +282,108 @@ border-radius: 20px;
     border-radius: 20px;
 
 }
-.big_img_box img:hover{
+.big_img_box img:hover,.grid_img div:hover{
     transform: scale(1.1) ;
    transition: 1s;
    transition-delay: 0.1;
  
-   box-shadow: 0px 0px 10px 10px rgb(179, 179, 179);
+   box-shadow: 0px 0px 15px 5px rgb(79, 149, 254);
 }
  
 .grid_img{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns:1fr 1fr;
  width: 100%;
-height: 100%;
+height: 500px;
+background-color:transparent;
+/* background-color:rgb(219, 216, 219); */
+opacity: calc(1.3);
 }
-.grid_img img{
-width: 50%;
-height: 50%;
+/* .grid_img img{
+width: 200px;
+height: auto;
 
+margin:10px;
+} */
+.grid_text_box{
+    width: 180px;
+    margin:10px;
+border-radius: 10px;
+/* display: flex;
+justify-content: center; */
+box-shadow: 0px 0px 5px 3px rgb(69, 139, 245);
+    }
+
+.grid_text_box{
+align-items: center;
+padding: 20px;
+border-radius: 10px;
+background-color: rgba(11, 11, 11, 0.194);
+/* filter: blur(1px); */
 }
 
-
+.grid_text_box i{
+    font-size: 25px;
+}
 
 /* main tag style end from here */
 
 /* footer  style start from here */
+
+footer{
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    height: auto;
+    border:2px solid red;
+     display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; 
+}
+
+.title_btn_div{
+    width: 90%;
+
+}
+
+.title_btn_div h3{
+margin-bottom: 0;
+font-size: 30px;
+}
+.footer_button3_div{
+    display: flex;
+    width:90%;
+    margin: 0;
+}
+
+
+.footer_btn{
+
+  border:0;
+  background-color: transparent;
+    height: 100px;
+}
+
+.footer_btn a{
+    padding: 10px 20px;
+    margin-right: 10px;
+   color:black;
+   border: 1px solid black;
+   border-radius: 20px;
+   text-decoration: none;
+
+}
+
+.footer_btn a:hover{
+   color:white;
+   background-color: black;
+   text-decoration: underline;
+}
+
+footer .lot_p_div{
+    width: 80%;
+  color:#6e6e73;
+  font-size: 12px;
+}
 /* footer  style end from here */
