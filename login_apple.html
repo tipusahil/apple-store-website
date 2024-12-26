@@ -1,11 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles/style1.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Apple store website's login form</title>
+<!-- font awesome cdn linkup -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+     
+.form_body{
+  margin: 0;
+  padding: 0;
+    /* width: 100%;
+    height: 100%; */
+    background: aliceblue;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+form{
+    width: 400px;
+    height: 600px;
+ border-radius: 10px;
+    display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   background-image: url(images/apple_lugo_4k.jpeg);
+   background-repeat: no-repeat;
+background-size: cover;
+   /* background-color:rgb(208, 234, 243); */
+   box-shadow:0px 0px 15px 5px rgb(105, 140, 244);
+
+}
+
+.input_div{
+    width: 80%;
+    border:2px solid rgb(189, 188, 188);
+   margin:10px;
+   text-align: center;
+   
+   border-radius: 10px;
+  padding:10px 35px 10px 10px;
+  box-shadow:0px 0px 5px 2px rgb(105, 140, 244);
+
+  background:linear-gradient(-45deg, rgba(228, 62, 228, 0.532),rgba(219, 248, 248, 0.475),rgba(2, 27, 91, 0.502));
+
+  display: flex;
+  align-items: center;
+}
+
+[type="text"],[type="email"],[type="password"]{
+    width: 100%;
+    height: auto; 
+    background:transparent;
+border:0;
+color:white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+
+
+}
+ input::placeholder{
+ color:white;
+
+}
+
+.div_submit{
+    background: transparent;
+box-shadow: none;
+border:0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+[type="submit"]{
+ width: 50%;
+ padding:10px 20px;
+ background:linear-gradient(-45deg, rgba(228, 62, 228, 0.69),rgba(55, 80, 80, 0.771),rgba(3, 30, 100, 0.344));
+ border:2px solid rgb(173, 172, 172);
+ border-radius: 10px;
+ color:white;
+ font-size: 18px;
+
+}
+[type="submit"]:hover{
+    box-shadow:0px 0px 5px 2px rgb(105, 140, 244);
+  background:linear-gradient(100deg, rgba(228, 62, 228, 0.532),rgba(219, 248, 248, 0.475),rgba(2, 27, 91, 0.502));
+    /* background-clip:text;
+    color:transparent; */
+}
+
+.texts{
+    /* background:linear-gradient(90deg,black, white,black);
+    background-clip:text;
+    color:transparent; */
+    color:white;
+    font-size: 18px;
+    text-align: left;
+    font-weight:800;
+    padding-left: 20px;
+}
+    </style>
 </head>
 <body>
-    
+
+    <div class="form_body">
+        <form action="">
+            <div class="texts"><h1>Welcome to Apple Store</h1>
+                <h1>Please Login</h1></div>
+            <div class="input_div">
+<input type="text" placeholder="Enter Your Name" required > 
+            
+            </div>
+            <div class="input_div"><input type="email" placeholder="Enter Your Email" ></div>
+            <div class="input_div"><input type="password" placeholder="Enter Your Password" >
+  <i class="fa-solid fa-eye-low-vision" style="color:white; font-size:18px"></i> </div>
+            <div class="input_div div_submit"><input type="submit" value="Login"></div>
+        </form>
+    </div>
+
+
 </body>
 </html>
