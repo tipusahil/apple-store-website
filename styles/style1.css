@@ -65,7 +65,7 @@ z-index:-2;
 border-radius: 10px;
 }
 
-.nav:hover::after{
+/* .nav:hover::after{
     content:" ";
     position: absolute;
     top:0px;
@@ -79,9 +79,9 @@ z-index:-2;
 
 border-radius: 10px;
 transition: 10s infinite ease-in-out;
-}
+} */
 
-.nav ul{
+.nav >ul{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +109,7 @@ font-size: 30px;
     color:black;
 }
 
-.nav ul li a:hover{
+.nav  ul li a:hover{
     background:linear-gradient(to right,rgb(127, 247, 247), #bcdbf2,rgb(255, 254, 254)  );
     background-clip: text;
    color:transparent;
@@ -117,6 +117,43 @@ font-size: 30px;
 
 /* nav bar style end from here */
 
+.overlap_ul_1_li:hover >ul{
+display: block;
+
+}
+
+.overlap_ul_1{
+    display: none;
+    position: absolute;
+    top:50px;
+    right: 300px;
+    width:150px;
+    height: auto;
+  padding-left: 0;
+    border-radius: 20px;
+
+    /* background-color: rgba(25, 24, 24, 0.333); */
+    filter: blur(0.2px);
+    background: linear-gradient(45deg, #48667c6a, #55118986, #8a1d3687);
+}
+
+.overlap_ul_2_li:hover>.overlap_ul_2{
+    display: block;
+}
+
+.overlap_ul_2{
+    display: none;
+    position: absolute;
+    top:50px;
+    left: 50px;
+    width:150px;
+    height: auto;
+  padding-left: 0;
+    border-radius: 20px;
+    /* background-color: rgba(25, 24, 24, 0.333); */
+    filter: blur(0.2px);
+    background: linear-gradient(45deg, #48667c6a, #55118986, #8a1d3687);
+}
 
  .get_up{
     padding-top: 15px;
