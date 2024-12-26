@@ -335,7 +335,6 @@ footer{
     height: 100%;
     max-width: 1300px;
     height: auto;
-    border:2px solid red;
      display: flex;
    flex-direction: column;
    justify-content: center;
@@ -385,5 +384,40 @@ footer .lot_p_div{
     width: 80%;
   color:#6e6e73;
   font-size: 12px;
+}
+
+
+.footer_grid_item_long_div{
+    font-size: 12px;
+    width: 90%;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+padding-left: 50px;
+}
+
+.footer_grid_item_long_div a{
+  text-decoration: none;
+color:black;
+}
+
+.footer_item_catagories{
+    color:rgb(76, 75, 75);
+  font-weight: 700;
+}
+
+.copyright_bar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.copy_left{
+    color:#6e6e73;
+    font-size: 11px;
+    padding-right: 10px;
+}
+
+.copy_right{
+    font-size: 12px;
 }
 /* footer  style end from here */
