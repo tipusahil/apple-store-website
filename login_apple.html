@@ -8,9 +8,17 @@
 <!-- font awesome cdn linkup -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-     
+    
+    /* body{
+  
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    } */
+
 .form_body{
-  margin: 0;
+  margin: 50px;
   padding: 0;
     /* width: 100%;
     height: 100%; */
@@ -22,7 +30,7 @@
 
 form{
     width: 400px;
-    height: 600px;
+    height: 570px;
  border-radius: 10px;
     display: flex;
    justify-content: center;
@@ -33,7 +41,7 @@ form{
 background-size: cover;
    /* background-color:rgb(208, 234, 243); */
    box-shadow:0px 0px 15px 5px rgb(105, 140, 244);
-
+position: relative;
 }
 
 .input_div{
@@ -104,6 +112,17 @@ align-items: center;
     text-align: left;
     font-weight:800;
     padding-left: 20px;
+    padding-top: 20px;
+}
+
+
+.fa-circle-xmark{
+    position:absolute;
+    color:rgb(18, 2, 54);
+    top:10px;
+    left:10px;
+font-size: 25px;
+
 }
     </style>
 </head>
@@ -111,6 +130,7 @@ align-items: center;
 
     <div class="form_body">
         <form action="">
+            <a href="index.html"><i class="fa-regular fa-circle-xmark"></i></a>
             <div class="texts"><h1>Welcome to Apple Store</h1>
                 <h1>Please Login</h1></div>
             <div class="input_div">
