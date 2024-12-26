@@ -115,6 +115,21 @@ font-size: 30px;
    color:transparent;
 }
 
+.login_li .login{
+    background:linear-gradient(to right,rgb(127, 247, 247), #bcdbf2,rgb(255, 254, 254)  );
+    background-clip: text;
+   color:transparent;
+border:1px solid white;
+padding: 8px 14px;
+border-radius: 10px;
+}
+
+.login_li .login:hover{
+    /* background: white; */
+    background:linear-gradient(to right,rgb(127, 247, 247), #bcdbf2,rgb(255, 254, 254)  );
+    color:black;
+}
+
 /* nav bar style end from here */
 
 .overlap_ul_1_li:hover >ul{
