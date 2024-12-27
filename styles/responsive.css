@@ -1,62 +1,124 @@
 @media screen and (max-width:576px) {
- 
-    .nav{
+
+    .nav {
         flex-direction: column;
         align-items: center;
         justify-content: center;
 
-    } 
-    
-    .hide_for_response{
+    }
+
+    .hide_for_response {
         display: none;
     }
 
-    .nav >ul{
+    .nav>ul {
         margin: 0px;
-    padding:10px 10px;
-    width: 90%;
+        padding: 10px 10px;
+        width: 90%;
     }
-    
-    .nav ul li{
+
+    .nav ul li {
         margin-left: 10px;
         padding: 10px;
     }
-  .get_up{
-    font-size: 0.7rem;
-    text-align: center;
-padding:10px;
-  }
-    
-  /* share responsive styles */
-  .header_big_title_div 
-  {
-flex-direction: column;
-}
+
+    .get_up {
+        font-size: 0.7rem;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* share responsive styles */
+    .header_big_title_div {
+        flex-direction: column;
+    }
 
 
-.header_big_title_div h1,.title_colorful_text{
-    font-size: 2rem;
-    text-align: center;
+    .header_big_title_div h1,
+    .title_colorful_text {
+        font-size: 2rem;
+        text-align: center;
 
     }
-    
-    .big_img_sec1{
+
+    .big_img_sec1 {
         width: 90%;
-        margin:20px;
+        margin: 20px;
     }
 
-    .big_img_sec1 h1{
+    .big_img_sec1 h1 {
         font-size: 1.5rem;
-        }
+    }
 
-        .big_img_box{
-            margin:10px;
-          max-width: 400px;
-          height: 100%;
-        }
+    .big_img_box {
+        margin: 10px;
+        max-width: 450px;
+        height: 80%;
+        border: 2px solid red;
+    }
 
+    .grid_content {
+        grid-template-columns: 130px 130px;
+        gap: 2px;
+        padding: 0;
+        height: 500px;
+
+    }
+
+    .grid_text_box {
+        width: 60%;
+        height: calc(100%-10px (40%));
+        overflow-y: scroll;
+        padding: 5px;
+
+    }
+
+    .grid_text_box i {
+        font-size: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+
+    .footer_button3_div {
+        width: 100%;
+
+    }
+
+    .title_btn_div h3 {
+        font-size: 1.9rem;
+    }
+
+    .footer_button3_div {
+
+
+        flex-direction: column;
+
+        height: 140px;
+
+    }
+
+
+    footer .lot_p_div {
+        width: 95%;
+    }
+
+
+
+    .footer_grid_item_long_div {
+        width: 95%;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 50px;
+    }
+
+
+    .copyright_bar{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction:column;
+    }
+    
 }
-
-
-
-
