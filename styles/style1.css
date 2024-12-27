@@ -231,7 +231,6 @@ margin: 10px;
     margin: 0 auto;
     max-height: 78px;
     width: auto;
-    /* border-image-slice: fill; */
  }
  .img_body_box{
     text-align: center;
@@ -474,7 +473,7 @@ color:black;
 }
 /* footer  style end from here */
 
-/* 
+
 .hide{
     display: none;
-} */
+}
