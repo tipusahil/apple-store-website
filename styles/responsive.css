@@ -45,13 +45,18 @@ flex-direction: column;
         margin:20px;
     }
 
+    .big_img_sec1 h1{
+        font-size: 1.5rem;
+        }
+
+        .big_img_box{
+            margin:10px;
+          max-width: 400px;
+          height: 100%;
+        }
+
 }
 
-.big_img_sec1 h1{
 
-font-size: 25px;
-font-weight: 700;
-color:#6e6e73;
-text-align: left;
-}
+
 
